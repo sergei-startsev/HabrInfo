@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" type="text/css">
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div id="header">
+            <div class="icon" style="margin:0px 10px 5px 0px;">
+                <a id="linkicon" href="#"><img src="" alt="avatar"></a>
+            </div>
+            <div class="info" style="float:left;">
+                <div>
+                    <a id="linkname" href="#"><span id="name"></span></a>
+                </div>
+                <div class="stats">
+                    <div>карма: <span id="karma" class="value"></span></div>
+                    <div>рейтинг: <span id="rating" class="value"></span></div>
+                    <div>позиция: <span id="position" class="value"></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="sections" class="block">
+            <!--<div class="block-title">Мое</div>-->
+            <div style="margin:5px 10px 5px 10px;height:16px;">
+                <a id="icon-posts" class="icon-posts" title="Посты" href="#">Посты</a>
+                <a id="icon-questions" class="icon-questions" title="Q&A" href="#">Q&A</a>
+                <a id="icon-comments" class="icon-comments" title="Комментарии" href="#">Комментарии</a>
+                <a id="icon-notes" class="icon-notes" title="Заметки" href="#">Заметки</a>
+                <div style="float:right;">
+                    <a id="icon-favorites" class="icon-favorites" title="Избранное" href="#">Избранное</a>
+                    <a id="icon-mail" class="icon-mail" title="Личная почта" href="#">Личная почта</a>
+                    <a id="icon-settings" class="icon-settings" title="Настройки" href="#">Настройки</a>
+                </div>
+            </div>
+        </div>
+        <div id="general" class="block">
+            <!--<div class="block-title">Общее</div>-->
+            <div style="margin:0px 10px 10px 10px;">
+                <div>
+                    <a href="http://habrahabr.ru/feed/posts/"><span class="section-title">Лента</span></a>
+                </div>
+                <div style="margin-left:50px;">
+                    &#8226; <a href="http://habrahabr.ru/feed/"><span class="section-1-title">Все</span></a> |<a href="http://habrahabr.ru/feed/habred/"><span class="section-2-title habred-post">Захабренные</span></a> |<a href="http://habrahabr.ru/feed/new/"><span class="section-2-title new-post">Новые</span></a> |<a href="http://habrahabr.ru/feed/unhabred/"><span class="section-2-title unhabred-post">Отхабренные</span></a>
+                </div>
+                <div style="margin-left:50px;">
+                    &#8226; <a href="http://habrahabr.ru/feed/posts/"><span class="section-1-title">Посты</span></a> |<a href="http://habrahabr.ru/feed/posts/habred/"><span class="section-2-title habred-post">Захабренные</span></a> |<a href="http://habrahabr.ru/feed/posts/new/"><span class="section-2-title new-post">Новые</span></a> |<a href="http://habrahabr.ru/feed/posts/unhabred/"><span class="section-2-title unhabred-post">Отхабренные</span></a> |<a href="http://habrahabr.ru/sandbox/"><span class="section-2-title">Песочница</span></a>
+                </div>
+                <div style="margin-left:50px;">
+                    &#8226; <a href="http://habrahabr.ru/feed/qa/"><span class="section-1-title">Q&A</span></a> |<a href="http://habrahabr.ru/feed/qa/habred/"><span class="section-2-title habred-post">Захабренные</span></a> |<a href="http://habrahabr.ru/feed/qa/new/"><span class="section-2-title new-post">Новые</span></a> |<a href="http://habrahabr.ru/feed/qa/unhabred/"><span class="section-2-title unhabred-post ">Отхабренные</span></a>
+                </div>
+
+                <div>
+                    <a href="http://habrahabr.ru/posts/top/"><span class="section-title">Посты</span></a>
+                </div>
+                <div style="margin-left:50px;">
+                    &#8226; <a href="http://habrahabr.ru/posts/top/"><span class="section-1-title">Лучшие</span></a> |<a href="http://habrahabr.ru/posts/top/daily/"><span class="section-2-title period-post">За сутки</span></a> |<a href="http://habrahabr.ru/posts/top/weekly/"><span class="section-2-title period-post">За неделю</span></a> |<a href="http://habrahabr.ru/posts/top/monthly/"><span class="section-2-title period-post">За месяц</span></a> |<a href="http://habrahabr.ru/posts/top/alltime/"><span class="section-2-title period-post">За все время</span></a>
+                </div>
+                <div style="margin-left:50px;">
+                    &#8226; <a href="http://habrahabr.ru/posts/collective/"><span class="section-1-title">Тематические</span></a> |<a href="http://habrahabr.ru/posts/collective/habred"><span class="section-2-title habred-post">Захабренные</span></a> |<a href="http://habrahabr.ru/posts/collective/new"><span class="section-2-title new-post">Новые</span></a> |<a href="http://habrahabr.ru/posts/collective/unhabred"><span class="section-2-title unhabred-post">Отхабренные</span></a>
+                </div>
+                <div style="margin-left:50px;">
+                    &#8226; <a href="http://habrahabr.ru/posts/corporative/"><span class="section-1-title">Корпоративные</span></a> |<a href="http://habrahabr.ru/posts/corporative/"><span class="section-2-title habred-post">Захабренные</span></a> |<a href="http://habrahabr.ru/posts/corporative/new/"><span class="section-2-title new-post">Новые</span></a> |<a href="http://habrahabr.ru/posts/corporative/unhabred/"><span class="section-2-title unhabred-post">Отхабренные</span></a>
+                </div>
+
+                <div>
+                    <a href="http://habrahabr.ru/qa/"><span class="section-title">Q&A</span></a>
+                </div>
+                <div style="margin-left:50px;">
+                    &#8226; <a href="http://habrahabr.ru/qa/"><span class="section-1-title">Входящие</span></a> |<a href="http://habrahabr.ru/qa/"><span class="section-2-title habred-post">Захабренные</span></a> |<a href="http://habrahabr.ru/qa/new/"><span class="section-2-title new-post">Новые</span></a> |<a href="http://habrahabr.ru/qa/unhabred/"><span class="section-2-title unhabred-post">Отхабренные</span></a>
+                </div>
+                <div style="margin-left:50px;">
+                    &#8226; <a href="http://habrahabr.ru/qa/hot/"><span class="section-1-title">Горячие</span></a> &#8226; <a href="http://habrahabr.ru/qa/popular/"><span class="section-1-title">Популярные</span></a> &#8226; <a href="http://habrahabr.ru/qa/unanswered/"><span class="section-1-title">Без ответа</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="best-header">
+            Лучшее за 24 часа
+        </div>
+        <div id="best">
+        </div>
+    </div>
+    <div id="loading" class="icon-loading">
+    </div>
+    <div id="container" style="display:none;">
+    </div>
+  </body>
+</html>
