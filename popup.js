@@ -152,10 +152,10 @@ function getInfo(onSuccess, onError) {
     try {
         xhr.onload = function () {
             if (xhr.responseText) {
-                var parser = new DOMParser();
-                var xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
-
-                if (xmlDoc.getElementById("layout") != null) {
+                document.getElementById("container").innerHTML = xhr.responseText;
+                /*var parser = new DOMParser();
+                var xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");*/
+                if (document.getElementById("layout") != null) {
 
                     handleSuccess(xhr.responseText);
                     return;
